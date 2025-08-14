@@ -1,15 +1,14 @@
 $(document).ready(function () {
-    $('.dropbtn').on('click', function () {
-        let dropdown = $(this).parent().next('.dropdown-content'); 
+    $('.dropbtn').on('click', function (event) {
+        event.stopPropagation();
+        $('.dropdown-content').not($(this).parent().next()).addClass('hide');
+        $('.dropbtn').not(this).removeClass('rotate');
+        let dropdown = $(this).parent().next('.dropdown-content');
         dropdown.toggleClass('hide');
         $(this).toggleClass('rotate');
     });
-});
-function checkDropdown(){
-    dropdown.forEach(dropdown => {
-        if (!dropdown.classList.contains('hide')) {
-            dropdown.classList.add('hide');
-            dropdown.previousElementSibling.classList.remove('rotate');
-        }
+    $(document).on('click', function () {
+        $('.dropdown-content').addClass('hide');
+        $('.dropbtn').removeClass('rotate');
     });
-}
+});
