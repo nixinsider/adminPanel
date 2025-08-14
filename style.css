@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(247,250,255);
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar {
+    width: 20%;
+    height: 95vh;
+    background-color: rgb(247,250,255);
+    color: white;
+    /* position: fixed; */
+    overflow: scroll;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 20px 20px;
+}
+.sidebar-logo {
+    padding: 40px;
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    height: 10%; 
+    width: 70%;  
+    border-radius: 3px;
+}
+.dropdown-content {
+    background-color: rgb(247,250,255);
+    min-width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin-top: 2px;
+    overflow: hidden;
+}
+.dropdown-content a {
+    color: rgb(123, 123, 123);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.sidebarDashboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    height: 10%;
+    background-color: rgb(247,250,255);
+    color: white;
+    font-weight: bold;
+}
+.dashboard-info {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+.sidebarDashboardTitle {
+    color: rgb(123, 123, 123);
+    font-size: 1.9cqw;
+    font-weight: lighter;
+}
+.dashboard-icon {
+    width: 30px;
+    height: 30px;
+    color: rgb(123, 123, 123);
+}
+#dropdownBtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 2rem;
+}
+#dropdownBtn:hover {
+    color: rgb(123, 123, 123);
+    cursor: pointer;
+}
+#dropdownBtn.rotate {
+    transform: rotate(180deg);
+}
+#dropdownBtn svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: rgb(123, 123, 123);
+}
+.sidebarDashboard:hover #dropdownBtn {
+    color: rgb(123, 123, 123);
+}
+.drop-hrf {
+    margin-left: 19%;
+}
+.hide{
+    background-color:rgb(247,250,255);
+    display: none;
+}
