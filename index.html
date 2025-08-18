@@ -15,8 +15,8 @@
 <body>
     <!-- sidebar starts here -->
     <div class="sidebar">
-        <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
-            viewBox="0 0 16 16">
+        <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-x-lg" viewBox="0 0 16 16">
             <path
                 d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
         </svg>
@@ -235,8 +235,139 @@
                 </div>
             </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+        <div class="container">
+            <header class="header">
+                <h1>Company Agents Status</h1>
+            </header>
+
+            <div class="table-container">
+                <table class="agents-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Avatar</th>
+                            <th>Name</th>
+                            <th>Company</th>
+                            <th>Status</th>
+                            <th>Due Date</th>
+                            <th>Target Achievement</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#54</td>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
+                                        alt="Juan C. Cargill">
+                                </div>
+                            </td>
+                            <td>Juan C. Cargill</td>
+                            <td>Micro Electronics</td>
+                            <td><span class="status-badge canceled">Canceled</span></td>
+                            <td>12 Dec</td>
+                            <td>
+                                <div class="achievement">
+                                    <span class="percentage">71%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 71%; background-color: #ef4444;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="actions">
+                                    <button class="btn btn-hire">Hire</button>
+                                    <button class="btn btn-fire">Fire</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#55</td>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face"
+                                        alt="Johnathan Phelan">
+                                </div>
+                            </td>
+                            <td>Johnathan Phelan</td>
+                            <td>Hatchworks</td>
+                            <td><span class="status-badge on-hold">On Hold</span></td>
+                            <td>12 Dec</td>
+                            <td>
+                                <div class="achievement">
+                                    <span class="percentage">54%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 54%; background-color: #fbbf24;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="actions">
+                                    <button class="btn btn-hire">Hire</button>
+                                    <button class="btn btn-fire">Fire</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#56</td>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face"
+                                        alt="Darrell Lowe">
+                                </div>
+                            </td>
+                            <td>Darrell Lowe</td>
+                            <td>Riddle Electronics</td>
+                            <td><span class="status-badge in-progress">In Progress</span></td>
+                            <td>12 Dec</td>
+                            <td>
+                                <div class="achievement">
+                                    <span class="percentage">97%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 97%; background-color: #10b981;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="actions">
+                                    <button class="btn btn-hire">Hire</button>
+                                    <button class="btn btn-fire">Fire</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#56</td>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=50&h=50&fit=crop&crop=face"
+                                        alt="George T. Cottrell">
+                                </div>
+                            </td>
+                            <td>George T. Cottrell</td>
+                            <td>Pixelcloud</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                            <td>12 Dec</td>
+                            <td>
+                                <div class="achievement">
+                                    <span class="percentage">88%</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 88%; background-color: #06b6d4;"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="actions">
+                                    <button class="btn btn-hire">Hire</button>
+                                    <button class="btn btn-fire">Fire</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="script.js"></script>
 </body>
 
 </html>
