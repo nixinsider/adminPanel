@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    // Initialize visibility management
+    initializeVisibilityManagement();
+
     // Dropdown functionality
     $('.dropbtn').on('click', function (event) {
         event.stopPropagation();
@@ -41,8 +44,8 @@ $(document).ready(function () {
     $(document).on('click', function (e) {
         if (!$(e.target).closest('.sidebar, .burger-icon').length) {
             $('.sidebar').removeClass('active');
-            $('.sidebar-overlay').removeClass('active');
-            $('body').removeClass('sidebar-open');
+        $('.sidebar-overlay').removeClass('active');
+        $('body').removeClass('sidebar-open');
         }
     });
 
@@ -54,4 +57,61 @@ $(document).ready(function () {
             $('body').removeClass('sidebar-open');
         }
     });
+
+    // Login/Register/Forgot Password button handlers
+    $('#loginButton').on('click', function (e) {
+        e.preventDefault();
+        showLoginForm();
+    });
+
+    $('#registerButton').on('click', function (e) {
+        e.preventDefault();
+        showRegisterForm();
+    });
+
+    $('#forgotPassword-link').on('click', function (e) {
+        e.preventDefault();
+        showForgotPasswordForm();
+    });
 });
+
+// Centralized visibility management functions
+function initializeVisibilityManagement() {
+    // Set initial state - show main content by default
+    hideAllForms();
+    showMainContent();
+}
+
+function hideAllForms() {
+    $('.login-container').addClass('hide');
+    $('.Register-container').addClass('hide');
+    $('.forgotPassword-container').addClass('hide');
+}
+
+function showLoginForm() {
+    hideAllForms();
+    hideMainContent();
+    $('.login-container').removeClass('hide');
+}
+
+function showRegisterForm() {
+    hideAllForms();
+    hideMainContent();
+    $('.Register-container').removeClass('hide');
+}
+
+function showForgotPasswordForm() {
+    hideAllForms();
+    hideMainContent();
+    $('.forgotPassword-container').removeClass('hide');
+}
+
+function showMainContent() {
+    $('.container-mainContent').removeClass('hide');
+    $('#agentsCompany').removeClass('hide');
+}
+
+function hideMainContent() {
+    $('.container-mainContent').addClass('hide');
+    $('#agentsCompany').addClass('hide');
+}
